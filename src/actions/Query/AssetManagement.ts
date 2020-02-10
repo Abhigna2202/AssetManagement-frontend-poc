@@ -45,6 +45,11 @@ export const getInvestmentAccount = async (ethInstance: any) => {
   return conAddr
 }
 
+export const getInvestmentAccountBal = async (ethInstance: any) => {
+  const investBal = await managerContract.methods.getInvestmentAccountBalance().call({from: ethInstance.selectedAddress })
+  return investBal
+}
+
 export const createInvestmentAccount = async (ethInstance: any) => {
   const dataHex = managerContract.methods.createInvestmentAccount().encodeABI();
   const receipt = await sendTransaction(ethInstance, dataHex, 0,ManagerConAddress)
@@ -65,6 +70,11 @@ export const sellAssets = async (NumberOfUnits: string, stock_key: string, amoun
   return receipt
 }
 
+export const withdrawAmount = async (amount: any, ethInstance: any) => {
+  const dataHex = managerContract.methods.withdrawAmount(amount).encodeABI();
+  const receipt = await sendTransaction(ethInstance, dataHex,0,ManagerConAddress )
+  return receipt
+}
 
 export const sendTransaction = async (ethInstance: any, dataHex: any, amount: number, address: any) => {
   let nonce = web3.utils.toHex(
