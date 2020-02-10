@@ -1,0 +1,55 @@
+{
+  "name": "unisuper-frontend-poc",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@nivo/stream": "^0.61.1",
+    "@truffle/contract": "^4.0.32",
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.2",
+    "@types/react": "16.9.2",
+    "@types/react-dom": "16.9.0",
+    "@types/recharts": "^1.8.5",
+    "@types/styled-components": "^4.1.18",
+    "@types/web3": "^1.0.19",
+    "babel-plugin-macros": "^2.6.1",
+    "bn.js": "^5.0.0",
+    "bootstrap": "^4.3.1",
+    "eslint-utils": "^1.4.1",
+    "ethereumjs-util": "^6.1.0",
+    "ethjs-util": "^0.1.6",
+    "formik": "^2.1.3",
+    "react": "^16.9.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.2",
+    "reactjs-popup": "^1.5.0",
+    "recharts": "^2.0.0-beta.1",
+    "semantic-ui-react": "^0.88.2",
+    "styled-components": "^5.0.0",
+    "truffle-contract": "^4.0.31",
+    "typescript": "3.5.3",
+    "web3": "^1.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
