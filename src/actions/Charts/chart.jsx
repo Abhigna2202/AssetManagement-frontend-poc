@@ -30,7 +30,7 @@ const Chart = () => {
         let d = [];
         data.map((details) => {
             temp = temp + parseFloat(details.amount)/Math.pow(10,18)*(details.action == 'Buy' ? 1 : -1)
-            d.push({ name: new Date(parseInt(details.Date) * 1000).toUTCString(), Portfolio_Value: temp });
+            d.push({ name: new Date(parseInt(details.Date) * 1000).toLocaleString("en-US", {timeZone: "Australia/Melbourne"}), Portfolio_Value: temp });
         })
         setData(d);
         console.log(d);

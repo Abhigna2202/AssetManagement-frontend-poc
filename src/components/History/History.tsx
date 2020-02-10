@@ -70,7 +70,7 @@ const History = () => {
                 <TdBody> {parseFloat(Details.NumOfUnits) / 10000}</TdBody>
                 <TdBody> {parseFloat(Details.amount) / Math.pow(10, 18)}</TdBody>
                 <TdBody> {Details.action}</TdBody>
-                <TdBody> {new Date(parseInt(Details.Date) * 1000).toUTCString()}</TdBody>
+                <TdBody> {new Date(parseInt(Details.Date) * 1000).toLocaleString("en-US",{timeZone: "Australia/Melbourne"})}</TdBody>
                 <TdBody> {Details.Status}</TdBody>
               </TrBody>
               : ""
